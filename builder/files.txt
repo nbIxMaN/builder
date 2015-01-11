@@ -1,0 +1,2 @@
+Geometry\GUI\bin\Debug\Geometry.dll
+Geometry\GUI\bin\Debug\GUI.exe
