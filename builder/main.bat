@@ -7,7 +7,7 @@ call clone.bat
 if not "%ERRORS%"=="OK" goto :error
 call build.bat
 if not "%ERRORS%"=="OK" goto :error
-call test.bat
+call Test.bat
 if not "%ERRORS%"=="OK" goto :error
 echo "sfsdfsdf"
 :error

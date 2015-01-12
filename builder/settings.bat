@@ -1,7 +1,7 @@
 @echo off
 
 set BUILDLOG=bulid.txt
-set TESTSLOG=TestResult.xml
+set TESTSLOG=TestResult.txt
 set FILE = ""
 set ERRORS=OK
 

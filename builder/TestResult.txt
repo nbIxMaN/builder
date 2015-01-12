@@ -1,0 +1,30 @@
+NUnit-Console version 2.6.4.14350
+Copyright (C) 2002-2012 Charlie Poole.
+Copyright (C) 2002-2004 James W. Newkirk, Michael C. Two, Alexei A. Vorontsov.
+Copyright (C) 2000-2002 Philip Craig.
+All Rights Reserved.
+
+Runtime Environment - 
+   OS Version: Microsoft Windows NT 6.2.9200.0
+  CLR Version: 2.0.50727.8009 ( Net 3.5 )
+
+ProcessModel: Default    DomainUsage: Single
+Execution Runtime: net-3.5
+.F.F
+Tests run: 2, Errors: 0, Failures: 2, Inconclusive: 0, Time: 0,113488163738919 seconds
+  Not run: 0, Invalid: 0, Ignored: 0, Skipped: 0
+
+Errors and Failures:
+1) Test Failure : Test.Test.test1
+     Expected: False
+  But was:  True
+
+в Test.Test.test1() в d:\Test\Geometry\Tests\tests.cs:строка 17
+
+2) Test Failure : Test.Test.test2
+     Expected: True
+  But was:  False
+
+в Test.Test.test2() в d:\Test\Geometry\Tests\tests.cs:строка 23
+
+
