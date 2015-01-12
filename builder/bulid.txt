@@ -3,7 +3,7 @@ Microsoft (R) Build Engine версии 4.0.30319.33440
 (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
 
 Построение проектов в этом решении по одному. Чтобы включить параллельное построение, добавьте параметр "/m".
-Построение начато 12.01.2015 6:44:18.
+Построение начато 12.01.2015 6:46:21.
 Проект "D:\Test\Geometry\Geometry.sln" в узле 1 (целевые объекты по умолчанию).
 ValidateSolutionConfiguration:
   Создание конфигурации решения "Debug|Any CPU".
@@ -50,18 +50,20 @@ GenerateTargetFrameworkMonikerAttribute:
 Целевой объект "GenerateTargetFrameworkMonikerAttribute" пропускается, так как все выходные файлы актуальны по отношению к входным.
 CoreCompile:
   C:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:DEBUG;TRACE /highentropyva+ /reference:D:\Test\Geometry\Geometry\bin\Debug\Geometry.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /reference:D:\nunit\bin\framework\nunit.framework.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\Tests.dll /subsystemversion:6.00 /target:library /utf8output tests.cs Properties\AssemblyInfo.cs "C:\Users\I1\AppData\Local\Temp\.NETFramework,Version=v4.5.AssemblyAttributes.cs"
-tests.cs(23,47): error CS1002: ожидалась ; [D:\Test\Geometry\Tests\Tests.csproj]
-Построение проекта "D:\Test\Geometry\Tests\Tests.csproj" завершено (целевые объекты по умолчанию) с ошибкой.
-Построение проекта "D:\Test\Geometry\Geometry.sln" завершено (целевые объекты по умолчанию) с ошибкой.
+_CopyFilesMarkedCopyLocal:
+  Копирование файла из "D:\Test\Geometry\Geometry\bin\Debug\Geometry.dll" в "bin\Debug\Geometry.dll".
+  Копирование файла из "D:\nunit\bin\framework\nunit.framework.dll" в "bin\Debug\nunit.framework.dll".
+  Копирование файла из "D:\Test\Geometry\Geometry\bin\Debug\Geometry.pdb" в "bin\Debug\Geometry.pdb".
+  Копирование файла из "D:\nunit\bin\framework\nunit.framework.xml" в "bin\Debug\nunit.framework.xml".
+CopyFilesToOutputDirectory:
+  Копирование файла из "obj\Debug\Tests.dll" в "bin\Debug\Tests.dll".
+  Tests -> D:\Test\Geometry\Tests\bin\Debug\Tests.dll
+  Копирование файла из "obj\Debug\Tests.pdb" в "bin\Debug\Tests.pdb".
+Построение проекта "D:\Test\Geometry\Tests\Tests.csproj" завершено (целевые объекты по умолчанию).
+Построение проекта "D:\Test\Geometry\Geometry.sln" завершено (целевые объекты по умолчанию).
 
-Не удалось выполнить построение.
-
-"D:\Test\Geometry\Geometry.sln" (целевой объект по умолчанию) (1) ->
-"D:\Test\Geometry\Tests\Tests.csproj" (целевой объект по умолчанию) (4) ->
-(Целевой объект CoreCompile) -> 
-  tests.cs(23,47): error CS1002: ожидалась ; [D:\Test\Geometry\Tests\Tests.csproj]
-
+Построение успешно завершено.
     Предупреждений: 0
-    Ошибок: 1
+    Ошибок: 0
 
-Затраченное время: 00:00:01.35
+Затраченное время: 00:00:01.34

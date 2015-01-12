@@ -2,7 +2,7 @@
 
 set BUILDLOG=bulid.txt
 set TESTSLOG=TestResult.txt
-set FILE = ""
+set FILE=""
 set ERRORS=OK
 
 set GIT="C:\Program Files (x86)\Git\bin\git"
