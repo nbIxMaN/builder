@@ -3,7 +3,7 @@ Microsoft (R) Build Engine версии 4.0.30319.33440
 (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
 
 Построение проектов в этом решении по одному. Чтобы включить параллельное построение, добавьте параметр "/m".
-Построение начато 12.01.2015 6:30:02.
+Построение начато 12.01.2015 6:33:46.
 Проект "D:\Test\Geometry\Geometry.sln" в узле 1 (целевые объекты по умолчанию).
 ValidateSolutionConfiguration:
   Создание конфигурации решения "Debug|Any CPU".
@@ -15,28 +15,55 @@ GenerateTargetFrameworkMonikerAttribute:
 Целевой объект "GenerateTargetFrameworkMonikerAttribute" пропускается, так как все выходные файлы актуальны по отношению к входным.
 CoreCompile:
   C:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:DEBUG;TRACE /highentropyva+ /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\Geometry.dll /subsystemversion:6.00 /target:library /utf8output Geometry.cs Properties\AssemblyInfo.cs "C:\Users\I1\AppData\Local\Temp\.NETFramework,Version=v4.5.AssemblyAttributes.cs"
-Geometry.cs(17,24): error CS0246: Не удалось найти имя типа или пространства имен "sdfsdfsdfsd" (пропущена директива using или ссылка на сборку?) [D:\Test\Geometry\Geometry\Geometry.csproj]
-Построение проекта "D:\Test\Geometry\Geometry\Geometry.csproj" завершено (целевые объекты по умолчанию) с ошибкой.
+CopyFilesToOutputDirectory:
+  Копирование файла из "obj\Debug\Geometry.dll" в "bin\Debug\Geometry.dll".
+  Geometry -> D:\Test\Geometry\Geometry\bin\Debug\Geometry.dll
+  Копирование файла из "obj\Debug\Geometry.pdb" в "bin\Debug\Geometry.pdb".
+Построение проекта "D:\Test\Geometry\Geometry\Geometry.csproj" завершено (целевые объекты по умолчанию).
 Проект "D:\Test\Geometry\Geometry.sln" (1) выполняет построение "D:\Test\Geometry\GUI\GUI.csproj" (3) в узле 1 (целевые объекты по умолчанию).
 PrepareForBuild:
   Создание каталога "bin\Debug\".
   Создание каталога "obj\Debug\".
-Построение проекта "D:\Test\Geometry\GUI\GUI.csproj" завершено (целевые объекты по умолчанию) с ошибкой.
+CoreResGen:
+  "C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\resgen.exe" /useSourcePath /r:D:\Test\Geometry\Geometry\bin\Debug\Geometry.dll /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Microsoft.CSharp.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.DataSetExtensions.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Deployment.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.Linq.dll" /compile Form1.resx,obj\Debug\GUI.Form1.resources Properties\Resources.resx,obj\Debug\GUI.Properties.Resources.resources
+  Обрабатывается файл ресурсов "Form1.resx", результирующий объект: "obj\Debug\GUI.Form1.resources".
+  Обрабатывается файл ресурсов "Properties\Resources.resx", результирующий объект: "obj\Debug\GUI.Properties.Resources.resources".
+GenerateTargetFrameworkMonikerAttribute:
+Целевой объект "GenerateTargetFrameworkMonikerAttribute" пропускается, так как все выходные файлы актуальны по отношению к входным.
+CoreCompile:
+  C:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /platform:anycpu32bitpreferred /errorreport:prompt /warn:4 /define:DEBUG;TRACE /highentropyva+ /reference:D:\Test\Geometry\Geometry\bin\Debug\Geometry.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Deployment.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\GUI.exe /subsystemversion:6.00 /resource:obj\Debug\GUI.Form1.resources /resource:obj\Debug\GUI.Properties.Resources.resources /target:winexe /utf8output Form1.cs Form1.Designer.cs Program.cs Properties\AssemblyInfo.cs Properties\Resources.Designer.cs Properties\Settings.Designer.cs "C:\Users\I1\AppData\Local\Temp\.NETFramework,Version=v4.5.AssemblyAttributes.cs"
+_CopyFilesMarkedCopyLocal:
+  Копирование файла из "D:\Test\Geometry\Geometry\bin\Debug\Geometry.dll" в "bin\Debug\Geometry.dll".
+  Копирование файла из "D:\Test\Geometry\Geometry\bin\Debug\Geometry.pdb" в "bin\Debug\Geometry.pdb".
+_CopyAppConfigFile:
+  Копирование файла из "App.config" в "bin\Debug\GUI.exe.config".
+CopyFilesToOutputDirectory:
+  Копирование файла из "obj\Debug\GUI.exe" в "bin\Debug\GUI.exe".
+  GUI -> D:\Test\Geometry\GUI\bin\Debug\GUI.exe
+  Копирование файла из "obj\Debug\GUI.pdb" в "bin\Debug\GUI.pdb".
+Построение проекта "D:\Test\Geometry\GUI\GUI.csproj" завершено (целевые объекты по умолчанию).
 Проект "D:\Test\Geometry\Geometry.sln" (1) выполняет построение "D:\Test\Geometry\Tests\Tests.csproj" (4) в узле 1 (целевые объекты по умолчанию).
 PrepareForBuild:
   Создание каталога "bin\Debug\".
   Создание каталога "obj\Debug\".
-Построение проекта "D:\Test\Geometry\Tests\Tests.csproj" завершено (целевые объекты по умолчанию) с ошибкой.
-Построение проекта "D:\Test\Geometry\Geometry.sln" завершено (целевые объекты по умолчанию) с ошибкой.
+GenerateTargetFrameworkMonikerAttribute:
+Целевой объект "GenerateTargetFrameworkMonikerAttribute" пропускается, так как все выходные файлы актуальны по отношению к входным.
+CoreCompile:
+  C:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:DEBUG;TRACE /highentropyva+ /reference:D:\Test\Geometry\Geometry\bin\Debug\Geometry.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /reference:D:\nunit\bin\framework\nunit.framework.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\Tests.dll /subsystemversion:6.00 /target:library /utf8output tests.cs Properties\AssemblyInfo.cs "C:\Users\I1\AppData\Local\Temp\.NETFramework,Version=v4.5.AssemblyAttributes.cs"
+_CopyFilesMarkedCopyLocal:
+  Копирование файла из "D:\Test\Geometry\Geometry\bin\Debug\Geometry.dll" в "bin\Debug\Geometry.dll".
+  Копирование файла из "D:\nunit\bin\framework\nunit.framework.dll" в "bin\Debug\nunit.framework.dll".
+  Копирование файла из "D:\Test\Geometry\Geometry\bin\Debug\Geometry.pdb" в "bin\Debug\Geometry.pdb".
+  Копирование файла из "D:\nunit\bin\framework\nunit.framework.xml" в "bin\Debug\nunit.framework.xml".
+CopyFilesToOutputDirectory:
+  Копирование файла из "obj\Debug\Tests.dll" в "bin\Debug\Tests.dll".
+  Tests -> D:\Test\Geometry\Tests\bin\Debug\Tests.dll
+  Копирование файла из "obj\Debug\Tests.pdb" в "bin\Debug\Tests.pdb".
+Построение проекта "D:\Test\Geometry\Tests\Tests.csproj" завершено (целевые объекты по умолчанию).
+Построение проекта "D:\Test\Geometry\Geometry.sln" завершено (целевые объекты по умолчанию).
 
-Не удалось выполнить построение.
-
-"D:\Test\Geometry\Geometry.sln" (целевой объект по умолчанию) (1) ->
-"D:\Test\Geometry\Geometry\Geometry.csproj" (целевой объект по умолчанию) (2) ->
-(Целевой объект CoreCompile) -> 
-  Geometry.cs(17,24): error CS0246: Не удалось найти имя типа или пространства имен "sdfsdfsdfsd" (пропущена директива using или ссылка на сборку?) [D:\Test\Geometry\Geometry\Geometry.csproj]
-
+Построение успешно завершено.
     Предупреждений: 0
-    Ошибок: 1
+    Ошибок: 0
 
-Затраченное время: 00:00:00.99
+Затраченное время: 00:00:01.32
