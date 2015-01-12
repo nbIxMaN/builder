@@ -12,7 +12,7 @@ if "%ERRORS%"=="CloneSucceeded" (
 if "%ERRORS%"=="BuildSucceeded" (
 	set SUBJECT="BuildSucceeded"
 	set BODY="Build Succeeded, please read Logfile"
-	set FILE=-attacht BUILDLOG)
+	set FILE=-attacht %BUILDLOG%)
 
 if "%ERRORS%"=="FileSucceeded" (
 	set SUBJECT="FileSucceeded"
@@ -21,6 +21,6 @@ if "%ERRORS%"=="FileSucceeded" (
 if "%ERRORS%"=="TestSucceeded" (
 	set SUBJECT="TestSucceeded"
 	set BODY="Some tests failed"
-	set FILE=-attacht TESTSLOG)
+	set FILE=-attacht %TESTSLOG%)
 
 %BLAT% -subject %SUBJECT% -body %BODY% -to %EMAIL% %FILE%
