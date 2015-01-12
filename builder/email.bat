@@ -22,6 +22,4 @@ if "%ERRORS%"=="TestSucceeded" (
 	set SUBJECT="TestSucceeded"
 	set BODY="Some tests failed"
 	set FILE=-attacht %TESTSLOG%)
-echo "%ERRORS%"
-echo "%FILE%"
 %BLAT% -subject %SUBJECT% -body %BODY% -to %EMAIL% %FILE%
