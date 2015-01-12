@@ -13,35 +13,35 @@ namespace GUI
 {
     public partial class Form1 : Form
     {
+        int Ex, Ey, w, h, Cx, Cy;
+        Graphics gmc;
+        Pen pen = Pens.Aqua;
+        Pen pen2 = Pens.Red;
         public Form1()
         {
             InitializeComponent();
+            gmc = Graphics.FromHwnd(panel1.Handle);
         }
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
-                Graphics gmc = Graphics.FromHwnd(panel1.Handle);
-                gmc.Clear(Color.White);
-                List<Point> points = new List<Point>();
-                string coordinates = Points.Text;
-                foreach (string point in coordinates.Split(';'))
-                {
-                    double doubleX = Convert.ToDouble(point.Split(',')[0]);
-                    double doubleY = Convert.ToDouble(point.Split(',')[1]);
-                    int x = Convert.ToInt32(Math.Round(doubleX, 0));
-                    int y = Convert.ToInt32(Math.Round(doubleY, 0));
-                    points.Add(new Point(x, panel1.Height - y));
-                }
-                Point[] pointsArray = points.ToArray();
-                gmc.FillPolygon(Brushes.Aqua, pointsArray);
-                gmc.DrawPolygon(Pens.Aqua, pointsArray);
-                points.Clear();
+                Ex = Convert.ToInt32(EPoint.Text.Split(',')[0]);
+                Ey = Convert.ToInt32(EPoint.Text.Split(',')[1]);
+                w = Convert.ToInt32(width.Text);
+                h = Convert.ToInt32(heigth.Text);
+                Cx = Convert.ToInt32(CPoint.Text.Split(',')[0]);
+                Cy = Convert.ToInt32(CPoint.Text.Split(',')[1]);
+                this.panel1_Paint(this, null);
             }
             catch
             {
-                Points.Clear();
-                Points.AppendText("Please enter points");
+                CPoint.Clear();
+                width.Clear();
+                heigth.Clear();
+                EPoint.Clear();
+                Log.Clear();
+                Log.AppendText("Please enter points");
             }
         }
 
@@ -49,19 +49,9 @@ namespace GUI
         {
             try
             {
-                List<double> points = new List<double>();
-                string coordinates = Points.Text;
-                foreach (string point in coordinates.Split(';'))
-                {
-                    double x = Convert.ToDouble(point.Split(',')[0]);
-                    double y = Convert.ToDouble(point.Split(',')[1]);
-                    points.Add(x);
-                    points.Add(panel1.Height - y);
-                }
-                double[] pointsArray = points.ToArray();
-                Geometry.Geometry geom = 
-                    new Geometry.Geometry(pointsArray[0], pointsArray[1], pointsArray[2], pointsArray[3], pointsArray[4], pointsArray[5], pointsArray[6], pointsArray[7]);
-                if (geom.IsParalel)
+                Geometry.Geometry geom =
+                    new Geometry.Geometry(Ex, Ey, w, h, Cx, Cy);
+                if (geom.CheckDot())
                 {
                     Log.Clear();
                     Log.AppendText("True");
@@ -74,25 +64,35 @@ namespace GUI
             }
             catch
             {
-                Points.Clear();
-                Points.AppendText("Please enter points");
+                CPoint.Clear();
+                CPoint.AppendText("Please enter points");
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Random r = new Random();
-            Points.Clear();
-            for (int i = 0; i < 3; i++)
-            {
-                Points.AppendText(r.Next(panel1.Width).ToString());
-                Points.AppendText(",");
-                Points.AppendText(r.Next(panel1.Height).ToString());
-                Points.AppendText(";");
-            }
-            Points.AppendText(r.Next(panel1.Width).ToString());
-            Points.AppendText(",");
-            Points.AppendText(r.Next(panel1.Height).ToString());
+            CPoint.Clear();
+            EPoint.Clear();
+            width.Clear();
+            heigth.Clear();
+            int x = r.Next(panel1.Width - 100);
+            int y = r.Next(panel1.Height - 100);
+            EPoint.AppendText(x.ToString());
+            EPoint.AppendText(",");
+            EPoint.AppendText(y.ToString());
+            width.AppendText(r.Next(panel1.Width - x).ToString());
+            heigth.AppendText(r.Next(panel1.Height - y).ToString());
+            CPoint.AppendText(r.Next(panel1.Width).ToString());
+            CPoint.AppendText(",");
+            CPoint.AppendText(r.Next(panel1.Height).ToString());
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            gmc.Clear(Color.White);
+            gmc.DrawEllipse(pen, Ex, panel1.Height - Ey - h, w, h);
+            gmc.DrawEllipse(pen2, (Cx - 1), panel1.Height - (Cy + 1), 2, 2);
         }
     }
 }
