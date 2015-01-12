@@ -1,7 +1,7 @@
 @echo off
 
 if not "%ISSTARTED%"=="STARTED" goto :EOF
-%MSBUILD% %REPOLOC%\%PROJECTNAME% > %BUILDLOG%
+%MSBUILD% %REPOLOC%\%PROJECTNAME%
 
 if ERRORLEVEL 1 (
 	set ERRORS=BuildSucceeded
