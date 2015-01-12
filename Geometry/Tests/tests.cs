@@ -20,7 +20,7 @@ namespace Test
         public void test2()
         {
             Geometry.Geometry geom = new Geometry.Geometry(84, 75, 327, 82, 92, 187);
-            Assert.IsFalse(geom.CheckDot());55
+            Assert.IsFalse(geom.CheckDot());
         }
     }
 }
