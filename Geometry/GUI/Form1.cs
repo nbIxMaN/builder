@@ -26,7 +26,7 @@ namespace GUI
         {
             try
             {
-                Ex = Convert.ToInt32(EPoint.Text.Split(',')[0]);rrrrr
+                Ex = Convert.ToInt32(EPoint.Text.Split(',')[0]);
                 Ey = Convert.ToInt32(EPoint.Text.Split(',')[1]);
                 w = Convert.ToInt32(width.Text);
                 h = Convert.ToInt32(heigth.Text);
